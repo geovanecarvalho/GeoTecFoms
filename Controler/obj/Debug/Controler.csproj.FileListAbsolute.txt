@@ -1,0 +1,9 @@
+C:\Users\Geovane\source\repos\GeoTec\Controler\bin\Debug\Controler.dll
+C:\Users\Geovane\source\repos\GeoTec\Controler\bin\Debug\Controler.pdb
+C:\Users\Geovane\source\repos\GeoTec\Controler\bin\Debug\Model.dll
+C:\Users\Geovane\source\repos\GeoTec\Controler\bin\Debug\Model.pdb
+C:\Users\Geovane\source\repos\GeoTec\Controler\obj\Debug\Controler.csprojAssemblyReference.cache
+C:\Users\Geovane\source\repos\GeoTec\Controler\obj\Debug\Controler.csproj.CoreCompileInputs.cache
+C:\Users\Geovane\source\repos\GeoTec\Controler\obj\Debug\Controler.csproj.CopyComplete
+C:\Users\Geovane\source\repos\GeoTec\Controler\obj\Debug\Controler.dll
+C:\Users\Geovane\source\repos\GeoTec\Controler\obj\Debug\Controler.pdb

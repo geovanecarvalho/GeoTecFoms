@@ -1,0 +1,17 @@
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\bin\Debug\GeoTec.exe.config
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\bin\Debug\GeoTec.exe
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\bin\Debug\GeoTec.pdb
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.csprojAssemblyReference.cache
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.frmGeoTec.resources
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.frmLogin.resources
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.Properties.Resources.resources
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.csproj.GenerateResource.cache
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.csproj.CoreCompileInputs.cache
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.exe
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.pdb
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\bin\Debug\Model.dll
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\bin\Debug\Model.pdb
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.csproj.CopyComplete
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\bin\Debug\Controler.dll
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\bin\Debug\Controler.pdb
+C:\Users\Geovane\source\repos\GeoTec\GeoTec\obj\Debug\GeoTec.frmSettings.resources
