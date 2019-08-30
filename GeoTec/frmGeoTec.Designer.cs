@@ -43,6 +43,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.chcBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +104,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chcBox);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button5);
@@ -117,7 +119,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 274);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(566, 315);
+            this.groupBox1.Size = new System.Drawing.Size(566, 332);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bem-Vindo ao nosso Formulário";
@@ -211,12 +213,23 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Descrição do Serviço";
             // 
+            // chcBox
+            // 
+            this.chcBox.AutoSize = true;
+            this.chcBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.chcBox.Location = new System.Drawing.Point(320, 309);
+            this.chcBox.Name = "chcBox";
+            this.chcBox.Size = new System.Drawing.Size(240, 17);
+            this.chcBox.TabIndex = 13;
+            this.chcBox.Text = "Não exibir esta mensagem novamente";
+            this.chcBox.UseVisualStyleBackColor = true;
+            // 
             // frmGeoTec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(590, 601);
+            this.ClientSize = new System.Drawing.Size(598, 618);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -254,6 +267,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox chcBox;
     }
 }
 
