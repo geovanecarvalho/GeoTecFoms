@@ -53,16 +53,21 @@ namespace GeoTec
                 var result = MessageBox.Show("Cadastrados Realizado com Sucesso!","Parabéns", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 MdlCadastro mCad = new MdlCadastro();
+                
 
                 mCad.setData(txtDate.Text);
                 mCad.setName(txtNome.Text);
                 mCad.setDescription(txtDescription.Text);
+
+                Mdlbackup back = new Mdlbackup();
+                back.setPath(txtBackup.Text);
 
                 Cadastro ctlCad = new Cadastro();
 
                 if(result == DialogResult.OK)
                 {
                     ctlCad.Inserir(mCad.getData(), mCad.getName(), mCad.getDescription());
+                    MessageBox.Show(back.getPath());
                 }
 
 
@@ -131,6 +136,12 @@ namespace GeoTec
         private void txtCancelar_Click(object sender, EventArgs e)
         {
             LimparTela();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
+            txtBackup.Text = folderBrowserDialog1.SelectedPath;
         }
     }
 }

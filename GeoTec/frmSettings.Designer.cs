@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSettings));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtCancelar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.txtDescription = new System.Windows.Forms.RichTextBox();
@@ -44,6 +45,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -52,6 +54,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtCancelar);
             this.groupBox1.Controls.Add(this.btnCadastrar);
             this.groupBox1.Controls.Add(this.txtDescription);
@@ -69,6 +72,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Configuração do Sistema";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(170, 95);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Localizar pasta do Backup";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtCancelar
             // 
@@ -128,6 +141,7 @@
             // txtBackup
             // 
             this.txtBackup.AccessibleDescription = "";
+            this.txtBackup.Enabled = false;
             this.txtBackup.Location = new System.Drawing.Point(20, 97);
             this.txtBackup.Name = "txtBackup";
             this.txtBackup.Size = new System.Drawing.Size(132, 20);
@@ -209,5 +223,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
