@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtData = new System.Windows.Forms.MaskedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.RichTextBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.txtDescricao = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtData = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,57 +57,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro Garantia do Cliente";
             // 
-            // label1
+            // BtnCancelar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Data Garantia";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtData
-            // 
-            this.txtData.Location = new System.Drawing.Point(11, 48);
-            this.txtData.Mask = "00/00/0000";
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(100, 20);
-            this.txtData.TabIndex = 1;
-            this.txtData.ValidatingType = typeof(System.DateTime);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nome do Cliente";
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(11, 102);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(313, 20);
-            this.txtNome.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Descrição do Conserto Realizado";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(11, 159);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(313, 96);
-            this.txtDescricao.TabIndex = 5;
-            this.txtDescricao.Text = "";
+            this.BtnCancelar.Location = new System.Drawing.Point(142, 277);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancelar.TabIndex = 7;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnCadastrar
             // 
@@ -119,14 +76,59 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BtnCancelar
+            // txtDescricao
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(142, 277);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.BtnCancelar.TabIndex = 7;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.txtDescricao.Location = new System.Drawing.Point(11, 159);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(313, 96);
+            this.txtDescricao.TabIndex = 5;
+            this.txtDescricao.Text = "";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Descrição do Conserto Realizado";
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(11, 102);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(313, 20);
+            this.txtNome.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nome do Cliente";
+            // 
+            // txtData
+            // 
+            this.txtData.BeepOnError = true;
+            this.txtData.Location = new System.Drawing.Point(11, 48);
+            this.txtData.Mask = "00/00/0000";
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(100, 20);
+            this.txtData.TabIndex = 1;
+            this.txtData.ValidatingType = typeof(System.DateTime);
+            this.txtData.Validating += new System.ComponentModel.CancelEventHandler(this.txtData_Validating);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Data Garantia";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmSettings
             // 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class MdlCadastro
+    public class MdlCadastro
     {
         private string data;
         private string name;

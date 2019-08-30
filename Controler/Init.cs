@@ -9,20 +9,6 @@ namespace Controler
 {
     public class Init
     {
-        public void CriarArquivo(string nome)
-        {
-            // CRIANDO ARQUIVO HIDDEN
-            try
-            {
-                FileInfo arquivo = new FileInfo(@"C:\\fileSystem\\" + nome + ".txt");
-                arquivo.CreateText();
-                arquivo.Attributes = FileAttributes.Hidden;
-            }
-            catch
-            {
-
-            }
-        }
         public void CriarPasta()
         {
 

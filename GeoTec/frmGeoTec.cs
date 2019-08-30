@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Model;
 using Controler;
+using System.IO;
 
 namespace GeoTec
 {
@@ -35,12 +36,21 @@ namespace GeoTec
             Init Inicial = new Init();
 
             Inicial.CriarPasta();
-            Inicial.CriarArquivo("Name");
-            Inicial.CriarArquivo("Date");
-            Inicial.CriarArquivo("Description");
 
 
+            
            
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
