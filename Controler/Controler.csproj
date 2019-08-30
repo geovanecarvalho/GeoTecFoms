@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Backup.cs" />
     <Compile Include="Cadastro.cs" />
+    <Compile Include="Leitura.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Init.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -35,7 +35,21 @@ namespace GeoTec
         private void frmGeoTec_Load(object sender, EventArgs e)
         {
             Init Inicial = new Init();
+            Leitura Ler = new Leitura();
+            
+            try
+            {
+                Ler.lerArquivo();
+                lblName.Text = "Olá Tudo Bem " + Ler.LerName()+ " Obrigado Por Ser Nosso Cliente";
+                txtDescripition.Text =  Ler.LerDescription();
+            }
+            catch
+            {
+              
+    
+               
 
+            }
             Inicial.CriarPasta();
 
 
@@ -58,18 +72,34 @@ namespace GeoTec
         {
             Backup ctlBack = new Backup();
 
-            ctlBack.Verificar();
-
-            if (string.IsNullOrEmpty(ctlBack.Verificar()))
+            try
             {
-                MessageBox.Show("Não foi realizado nenhum backup!", "Atenção",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ctlBack.Verificar();
 
+                if (string.IsNullOrEmpty(ctlBack.Verificar()))
+                {
+                    MessageBox.Show("Não foi realizado nenhum backup!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+
+                    Process.Start(ctlBack.Verificar());
+                }
             }
-            else
+            catch
             {
-                
-                Process.Start(ctlBack.Verificar());
+                var resut = MessageBox.Show("Os Aquivos de backup não foram configurados, deseja configura-los agora?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (resut == DialogResult.Yes)
+                {
+                    frmLogin l = new frmLogin();
+                    l.Visible = true;
+                }
             }
+
+
+
+            
 
 
             
@@ -85,6 +115,31 @@ namespace GeoTec
         {
             Site web = new Site();
             Process.Start(web.webWhatsApp());
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Leitura Ler = new Leitura();
+            try
+            {
+                Ler.lerArquivo();
+                MessageBox.Show(Ler.LerDate(), "Garantia Válida até:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                var resut = MessageBox.Show("Os Aquivos de Garantia não foram configurados, deseja configura-los agora?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (resut == DialogResult.Yes)
+                {
+                    frmLogin l = new frmLogin();
+                    l.Visible = true;
+                }
+
+            }
         }
     }
 }
