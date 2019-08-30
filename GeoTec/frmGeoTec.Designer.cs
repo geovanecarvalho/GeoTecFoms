@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chcBox = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.chcBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,9 +66,9 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(590, 261);
+            this.pictureBox1.Size = new System.Drawing.Size(604, 261);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -124,6 +124,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bem-Vindo ao nosso Formulário";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // chcBox
+            // 
+            this.chcBox.AutoSize = true;
+            this.chcBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.chcBox.Location = new System.Drawing.Point(320, 309);
+            this.chcBox.Name = "chcBox";
+            this.chcBox.Size = new System.Drawing.Size(240, 17);
+            this.chcBox.TabIndex = 13;
+            this.chcBox.Text = "Não exibir esta mensagem novamente";
+            this.chcBox.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -212,17 +223,6 @@
             this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Descrição do Serviço";
-            // 
-            // chcBox
-            // 
-            this.chcBox.AutoSize = true;
-            this.chcBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.chcBox.Location = new System.Drawing.Point(320, 309);
-            this.chcBox.Name = "chcBox";
-            this.chcBox.Size = new System.Drawing.Size(240, 17);
-            this.chcBox.TabIndex = 13;
-            this.chcBox.Text = "Não exibir esta mensagem novamente";
-            this.chcBox.UseVisualStyleBackColor = true;
             // 
             // frmGeoTec
             // 

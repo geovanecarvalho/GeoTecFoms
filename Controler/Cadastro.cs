@@ -9,7 +9,7 @@ namespace Controler
 {
     public class Cadastro
     {
-        public void inserir(string date, string name, string description)
+        public void Inserir(string date, string name, string description)
         {   
           
             StreamWriter writeDate = new StreamWriter(@"c:\FileSystem\Date.txt");
@@ -24,5 +24,6 @@ namespace Controler
             writeDescription.Write(description);
             writeDescription.Close();
         }
+
     }
 }

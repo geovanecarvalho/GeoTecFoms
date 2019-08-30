@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
+using Controler;
 
 namespace GeoTec
 {
@@ -46,7 +48,28 @@ namespace GeoTec
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-           
+            MdlLogin log = new MdlLogin();
+            log.setLogin(txtLogin.Text);
+            log.setSenha(txtSenha.Text);
+
+            Login ctlLogin = new Login();
+            ctlLogin.Verificar(log.getLogin(), log.getSenha());
+
+            if (ctlLogin.Acesso() == true)
+            {
+                MessageBox.Show("Acesso Permitido", "Parabéns", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmSettings confg = new frmSettings();
+                Close();
+                confg.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Acesso Negado", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtLogin.Text = string.Empty;
+                txtSenha.Text = string.Empty;
+                txtLogin.Focus();
+            }
+
         }
 
         private void btnSair_Click(object sender, EventArgs e)
