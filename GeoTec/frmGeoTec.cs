@@ -52,5 +52,25 @@ namespace GeoTec
         {
             Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Backup ctlBack = new Backup();
+
+            ctlBack.Verificar();
+
+            if (string.IsNullOrEmpty(ctlBack.Verificar()))
+            {
+                MessageBox.Show("Não foi realizado nenhum backup!", "Atenção",MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else
+            {
+                MessageBox.Show(ctlBack.Verificar());
+            }
+
+
+            
+        }
     }
 }

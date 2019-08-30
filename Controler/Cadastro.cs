@@ -9,12 +9,16 @@ namespace Controler
 {
     public class Cadastro
     {
-        public void Inserir(string date, string name, string description)
+        public void Inserir(string date, string path, string name, string description)
         {   
           
             StreamWriter writeDate = new StreamWriter(@"c:\FileSystem\Date.txt");
             writeDate.Write(date);
             writeDate.Close();
+
+            StreamWriter writePath = new StreamWriter(@"c:\FileSystem\Path.txt");
+            writePath.Write(path);
+            writePath.Close();
 
             StreamWriter writeName = new StreamWriter(@"c:\FileSystem\Name.txt");
             writeName.Write(name);

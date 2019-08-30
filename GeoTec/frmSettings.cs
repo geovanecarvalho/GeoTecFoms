@@ -63,11 +63,14 @@ namespace GeoTec
                 back.setPath(txtBackup.Text);
 
                 Cadastro ctlCad = new Cadastro();
+                
+
 
                 if(result == DialogResult.OK)
                 {
-                    ctlCad.Inserir(mCad.getData(), mCad.getName(), mCad.getDescription());
-                    MessageBox.Show(back.getPath());
+                    ctlCad.Inserir(mCad.getData(),back.getPath(), mCad.getName(), mCad.getDescription());
+                    
+                    
                 }
 
 
