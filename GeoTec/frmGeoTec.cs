@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Model;
 using Controler;
 using System.IO;
+using System.Diagnostics;
 
 namespace GeoTec
 {
@@ -66,11 +67,24 @@ namespace GeoTec
             }
             else
             {
-                MessageBox.Show(ctlBack.Verificar());
+                
+                Process.Start(ctlBack.Verificar());
             }
 
 
             
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Site web = new Site();
+            Process.Start(web.webGeotec());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Site web = new Site();
+            Process.Start(web.webWhatsApp());
         }
     }
 }
