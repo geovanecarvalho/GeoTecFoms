@@ -197,6 +197,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aréa técnica";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
