@@ -37,6 +37,7 @@ namespace GeoTec
             StreamWriter write = new StreamWriter(@"c:\FileSystem\CheckBox.txt");
             write.WriteLine(chcBox.Checked);
             write.Close();
+            
 
             if(valor == true)
             {
@@ -46,6 +47,7 @@ namespace GeoTec
                 notifyIcon.Visible = true;
                 notifyIcon.BalloonTipText = "Sistema GeoTec Informática em background";
                 notifyIcon.ShowBalloonTip(10);
+                
             }
             else
             {
@@ -63,13 +65,33 @@ namespace GeoTec
             Init Inicial = new Init();
             Leitura Ler = new Leitura();
 
+            
+
             try
             {
                 StreamReader lerCheck = new StreamReader(@"c:\FileSystem\CheckBox.txt");
                 bool Ch = Convert.ToBoolean(lerCheck.ReadLine());
                 lerCheck.Close();
+                if(Ch == true)
+                {
+                    this.WindowState = FormWindowState.Minimized;
+                    this.Visible = false;
+                    this.ShowInTaskbar = false;
+                    notifyIcon.Visible = true;
+                    notifyIcon.BalloonTipText = "Sistema GeoTec Informática em background";
+                    notifyIcon.ShowBalloonTip(10);
+                }
+                else
+                {
+                    this.Visible = true;
+                    this.WindowState = FormWindowState.Normal;
+                    this.ShowInTaskbar = true;
 
-                Janela(Ch);
+                }
+                
+                
+               
+               
             }
             catch
             {

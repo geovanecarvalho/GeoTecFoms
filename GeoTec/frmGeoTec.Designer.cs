@@ -38,7 +38,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chcBox = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -110,7 +109,6 @@
             // 
             this.groupBox1.Controls.Add(this.chcBox);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.label3);
@@ -152,22 +150,11 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Celular (061) 99548-8068";
             // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(393, 242);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(167, 54);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Envie sua Mesagem";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(203, 242);
+            this.button5.Location = new System.Drawing.Point(215, 242);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(184, 54);
             this.button5.TabIndex = 10;
@@ -276,7 +263,6 @@
         private System.Windows.Forms.RichTextBox txtDescripition;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label3;
