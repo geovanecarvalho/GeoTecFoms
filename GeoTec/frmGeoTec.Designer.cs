@@ -139,6 +139,7 @@
             this.chcBox.TabIndex = 13;
             this.chcBox.Text = "Não exibir esta mensagem novamente";
             this.chcBox.UseVisualStyleBackColor = true;
+            this.chcBox.CheckedChanged += new System.EventHandler(this.chcBox_CheckedChanged);
             // 
             // label4
             // 
@@ -237,6 +238,7 @@
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
             this.notifyIcon.Text = "notifyIcon";
             this.notifyIcon.Visible = true;
+            this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseClick);
             // 
             // frmGeoTec
             // 

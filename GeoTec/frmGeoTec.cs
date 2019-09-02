@@ -32,10 +32,49 @@ namespace GeoTec
             AbriJanelaLogin();
         }
 
+        public void Janela(bool valor)
+        {
+            StreamWriter write = new StreamWriter(@"c:\FileSystem\CheckBox.txt");
+            write.WriteLine(chcBox.Checked);
+            write.Close();
+
+            if(valor == true)
+            {
+                this.WindowState = FormWindowState.Minimized;
+                this.Visible = false;
+                this.ShowInTaskbar = false;
+                notifyIcon.Visible = true;
+                notifyIcon.BalloonTipText = "Sistema GeoTec Informática em background";
+                notifyIcon.ShowBalloonTip(10);
+            }
+            else
+            {
+                this.Visible = true;
+                this.WindowState = FormWindowState.Normal;
+                this.ShowInTaskbar = true;
+                
+
+                
+            }
+        }
+
         private void frmGeoTec_Load(object sender, EventArgs e)
         {
             Init Inicial = new Init();
             Leitura Ler = new Leitura();
+
+            try
+            {
+                StreamReader lerCheck = new StreamReader(@"c:\FileSystem\CheckBox.txt");
+                bool Ch = Convert.ToBoolean(lerCheck.ReadLine());
+                lerCheck.Close();
+
+                Janela(Ch);
+            }
+            catch
+            {
+
+            }
             
             try
             {
@@ -65,7 +104,8 @@ namespace GeoTec
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            //MINIMIZAR A JANELA
+            Janela(true);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -140,6 +180,16 @@ namespace GeoTec
                 }
 
             }
+        }
+
+        private void notifyIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            Janela(false);
+        }
+
+        private void chcBox_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
