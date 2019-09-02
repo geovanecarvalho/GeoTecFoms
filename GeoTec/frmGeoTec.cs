@@ -11,6 +11,7 @@ using Model;
 using Controler;
 using System.IO;
 using System.Diagnostics;
+using Microsoft.Win32;
 
 namespace GeoTec
 {
@@ -65,7 +66,8 @@ namespace GeoTec
             Init Inicial = new Init();
             Leitura Ler = new Leitura();
 
-            
+            RegistryKey Reg = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
+            Reg.SetValue("GeoTec Informatica", Application.ExecutablePath.ToString());
 
             try
             {
